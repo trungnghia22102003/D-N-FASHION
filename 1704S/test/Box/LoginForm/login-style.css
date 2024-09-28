@@ -1,0 +1,187 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+}
+.login-form{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    height: 600px;
+    transform-style: preserve-3d;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#check:checked ~ .login-form{
+    transform: rotateY(-180deg);
+}
+.login-form .page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    border-radius: 30px;
+}
+.login-form .login{
+    transform: rotateY(0deg);
+}
+.login-form .signup{
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+.login-form .heading{
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    font-weight: 550;
+    text-align: left;
+    margin: 0 0 15px 30px ;
+}
+.login-form .title{
+    margin: 0 30px;
+    font-weight: 400;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+}
+.signup{
+    display: flex;
+    justify-content: space-between;
+}
+.login-img{
+    width: 45%;
+    height: 90%;  
+}
+.login-page_input{
+width: 45%;
+}
+.imglogin{
+    width: 90%;
+    margin: auto;
+}
+.signup-img{
+    width: 45%;
+    height: 90%;
+}
+.signup-page_input{
+    width: 45%;
+}
+.imgsignup{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.login-form .page form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.login-form .page form .entryarea{
+    position: relative;
+    margin: 0 0 30px 0;
+    height: 40px;
+    line-height: 40px;
+    z-index: 1111;
+}
+.login-form .page form .entryarea input{
+    position: absolute;
+    width: 400px;
+    font-size: 1.4em;
+    padding: 0 20px;
+    border: 1.5px solid #888;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    line-height: 40px;
+    transition: 0.1s ease;
+}
+.login-form .page form .entryarea .labelline{
+    position: absolute;
+    font-size: 1.2em;
+    margin: 0 20px;
+    padding: 0 5px;
+    color: #888;
+    transition: 0.2s ease   ;
+    pointer-events: none;
+}
+.login-form .page form .entryarea input:focus,
+.login-form .page form .entryarea input:valid{
+    color: #888;
+    border: 3px solid #888;
+}
+.login-form .page form .entryarea input:focus + .labelline,
+.login-form .page form .entryarea input:valid+ .labelline{
+    color: #888;
+    height: 30px;
+    background-color:#fff;
+    line-height: 30px;
+    transform: translate(-10px, -15px) scale(0.88);
+}
+#login-btn{
+    text-align: center;
+    background-color: #000;
+    width: 400px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color:#fff;
+    height: 40px;
+    border-radius: 30px;
+    width: 100%;    
+}
+#login-btn:hover{
+    cursor: pointer;
+}
+.login-box-btn{
+    width: 440px;
+}
+.switch{
+    margin-top:5px;
+    color:#2f5acf;
+    font-size: 1em;
+    font-weight: 400;
+}
+.switch:hover{
+    cursor:pointer;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.switch-signup{
+    margin-top:5px;
+    color:#2f5acf;
+    font-size: 1em;
+    font-weight: 400;
+    width: 25%;
+}
+.switch-signup:hover{
+    cursor:pointer;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.request{
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+.forgot-pass{
+    margin-left: 30px;
+    margin-top:5px;
+    color:#2f5acf;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none; 
+}
+.forgot-pass:hover{
+    cursor:pointer;
+    font-weight: 600;
+    text-decoration: underline;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
